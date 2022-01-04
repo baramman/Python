@@ -3,30 +3,27 @@
 이름 : 양성민
 내용 : 파이썬 3장 연습문제 p77
 """
-
+"""
 # [문제1]
 weight = int(input('짐의 무게는 얼마입니까? '))
 
 # A형
-"""
 if weight >= 10:
     print('수수료는 10,000원 입니다.')
 else:
     print('수수료는 없습니다.')
     pass
-"""
 
 # B형
 if weight >= 10:
-    pay = weight // 10
-    print('수수료는 ', pay,',000원입니다.')
+    pay = weight // 10 * 10
+    print('수수료는 ', end='')
+    print(pay, '000원입니다.', sep=',')
 else:
     print('수수료는 없습니다.')
     pass
 
-
 # [문제2] while 반복문을 이용한 '숫자 맞추기 게임'
-"""
 import random
 
 print('>>숫자 맞추기 게임<< ')
@@ -46,8 +43,15 @@ while True:
         print('더 큰 수 입력')
         continue
 """
-
 # [문제3]
+for i in range(1, 100):
+
+    for j in range(100-i):
+
+        if i % 3 == 0:
+
+        print('수열 =', i, end='')
+
 
 
 # [문제4]
