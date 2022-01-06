@@ -42,16 +42,23 @@ while True:
     if com > my:
         print('더 큰 수 입력')
         continue
-"""
+
 # [문제3]
-for i in range(1, 100):
+total = 0
+print('수열 = ', end='')
 
-    for j in range(100-i):
+for i in range(1, 101):
 
-        if i % 3 == 0:
+    if i % 3 == 0 and i % 2 != 0:
+        total += i
+        print(i, end=' ')
 
-        print('수열 =', i, end='')
-
-
-
+print()
+print('누적합 =', total)
+"""
 # [문제4]
+multiline = """안녕하세요. 파이썬 세계로 오신걸
+환영합니다.
+파이썬은 비단뱀 처럼 매력적인 언어입니다."""
+
+
